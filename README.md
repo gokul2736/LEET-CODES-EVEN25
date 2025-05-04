@@ -1,7 +1,7 @@
 # LEET-CODE-SOLS:
 *EASY QUESTIONS*
 
-### 1st  two lines (Function Signature) avasaram ledu chadivi waste eh... 
+### 1st  two lines (Predefined Function) avasaram ledu chadivi waste eh... 
 
 ## WEEK 1:
 ```
