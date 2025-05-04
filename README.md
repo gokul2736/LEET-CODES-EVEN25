@@ -5,12 +5,12 @@
 
 ## WEEK 1:  SINGLE NUMBER 
 ```
- class Solution(object):
+class Solution(object):
     def singleNumber(self, nums):
-        n=0
-        for i in nums:
-           n=n^i
-        return n    
+        a=0
+        for b in nums:
+            a ^=b
+        return a    
        
        
 nums_input = input()
@@ -18,7 +18,6 @@ nums = list(map(int, nums_input.split()))
 sol = Solution()
 result = sol.singleNumber(nums)
 print(result)
-
 ```
 
 ## WEEK 2:  Majority Element
