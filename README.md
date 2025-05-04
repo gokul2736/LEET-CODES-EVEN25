@@ -1,12 +1,24 @@
 # LEET-CODE-SOLS:
-*EASY QUESTIONS ONLY*
+*EASY QUESTIONS*
+
+### 1st  two lines (Function Signature) avasaram ledu chadivi waste eh... 
 
 ## WEEK 1:
 ```
- a=0
-        for b in nums:
-            a ^=b
-        return a
+ class Solution(object):
+    def singleNumber(self, nums):
+        n=0
+        for i in nums:
+           n=n^i
+        return n    
+       
+       
+nums_input = input()
+nums = list(map(int, nums_input.split()))
+sol = Solution()
+result = sol.singleNumber(nums)
+print(result)
+
 ```
 
 ## WEEK 2:
@@ -19,16 +31,28 @@ a = majority = 0
     return a
 ```
 
+## <p align="center"><strong>OR</strong></p>
+
+```
+from collections import Counter
+from typing import List
+
+def majorityElement(nums: List[int]) -> int:
+    count=Counter(nums)
+    for i in count:
+        if count[i] > len(nums)/2:
+            return(i)
+```
+
 ## WEEK 3:
 ```
 class Solution(object):
     def isPalindrome(self, s):
-        symbols = 'abcdefghijklmnopqrstuvwxyz1234567890'
-        a=''
-        for b in s.lower():
-            if b in symbols:
-                a+=b
-        return a[::-1] == a        
+        st=""
+        for i in s:
+            if i.isalnum():
+                st+=i.lower()
+        return st==st[::-1]              
 ```
 
 ## WEEK 4:
@@ -41,11 +65,12 @@ class Solution:
 ## WEEK 5:
 ```
 class Solution(object):
-    def isValid(self, s):
-        while len(s)>0:
-            l = len(s)
-            s=s.replace('()','').replace('{}','').replace('[]','')
-            if l == len(s): return False
+    def isValid(self, s : str)->bool:
+        while(len(s)>0):
+            l=len(s)
+            s=s.replace("[]","").replace("()","").replace("{}","")
+            if l==len(s):
+                return False
         return True       
 ```
 
@@ -56,12 +81,28 @@ class Solution(object):
 
 ## WEEK 7:
 ```
-
+class Solution(object):
+    def sortedSquares(self,nums):
+        l=[]
+        for i in nums:
+            i=abs(i)
+            a=i*i
+            l.append(a)
+        l.sort()
+        return l
 ```
 
 ## WEEK 8:
 ```
-
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        ways=1
+        for i in range(1,(n//2)+1):
+            product=1
+            for j in range(i,2*i):
+                product*=(n-j)/(j-i+1)
+            ways+=product
+        return int(ways)
 ```
 
 ## WEEK 9:
