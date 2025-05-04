@@ -3,7 +3,7 @@
 
 ### 1st  two lines (Predefined Function) avasaram ledu chadivi waste eh... 
 
-## WEEK 1:
+## WEEK 1:  SINGLE NUMBER 
 ```
  class Solution(object):
     def singleNumber(self, nums):
@@ -21,7 +21,7 @@ print(result)
 
 ```
 
-## WEEK 2:
+## WEEK 2:  Majority Element
 ```
 a = majority = 0
     for n in nums:
@@ -44,7 +44,7 @@ def majorityElement(nums: List[int]) -> int:
             return(i)
 ```
 
-## WEEK 3:
+## WEEK 3:  Valid Palindrome
 ```
 class Solution(object):
     def isPalindrome(self, s):
@@ -55,14 +55,14 @@ class Solution(object):
         return st==st[::-1]              
 ```
 
-## WEEK 4:
+## WEEK 4:  Perfect square
 ```
 class Solution:
     def isPerfectSquare(self, num: int) -> bool:
         return int(num**0.5)==num**0.5
 ```
 
-## WEEK 5:
+## WEEK 5:  Valid Parentheses
 ```
 class Solution(object):
     def isValid(self, s : str)->bool:
@@ -74,12 +74,12 @@ class Solution(object):
         return True       
 ```
 
-## WEEK 6:
+## WEEK 6:  Kth Missing Positive Number
 ```
 
 ```
 
-## WEEK 7:
+## WEEK 7:  Squares of a Sorted Array
 ```
 class Solution(object):
     def sortedSquares(self,nums):
@@ -92,7 +92,7 @@ class Solution(object):
         return l
 ```
 
-## WEEK 8:
+## WEEK 8:  Climbing Stairs
 ```
 class Solution:
     def climbStairs(self, n: int) -> int:
