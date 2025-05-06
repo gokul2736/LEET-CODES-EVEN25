@@ -111,14 +111,18 @@ class Solution(object):
 
 ```
 
-## WEEK 10:
+## WEEK 10:  Valid Anagram
+```
+class Solution:
+    def isAnagram(self, s, t):
+        return sorted(s) == sorted(t)
 ```
 
+## WEEK 11:  Length of Last Word
 ```
-
-## WEEK 11:
-```
-
+class Solution:
+    def lengthOfLastWord(self, s):
+        return len(s.strip().split()[-1])
 ```
 
 ## WEEK 12:
