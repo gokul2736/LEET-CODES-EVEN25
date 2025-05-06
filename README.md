@@ -74,7 +74,13 @@ class Solution(object):
 
 ## WEEK 6:  Kth Missing Positive Number
 ```
-
+from typing import List
+class Solution:
+    def findKthPositive(self, arr: List[int], k: int) -> int:
+        for i,x in enumerate(arr):
+            if x > i+k:
+                return i+k
+        return len(arr) + k
 ```
 
 ## WEEK 7:  Squares of a Sorted Array
