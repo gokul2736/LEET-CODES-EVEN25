@@ -87,26 +87,18 @@ class Solution:
 ```
 class Solution(object):
     def sortedSquares(self,nums):
-        l=[]
-        for i in nums:
-            i=abs(i)
-            a=i*i
-            l.append(a)
-        l.sort()
-        return l
+        ans=(num*num for num in nums)
+        ans=sorted(ans)
+        return ans
 ```
 
 ## WEEK 8:  Climbing Stairs
 ```
 class Solution:
     def climbStairs(self, n: int) -> int:
-        ways=1
-        for i in range(1,(n//2)+1):
-            product=1
-            for j in range(i,2*i):
-                product*=(n-j)/(j-i+1)
-            ways+=product
-        return int(ways)
+        if n==0 or n==1:
+            return 1
+        return self.climbStairs(n-1) + self.climbStairs(n-2)
 ```
 
 ## WEEK 9:
