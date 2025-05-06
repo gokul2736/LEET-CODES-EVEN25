@@ -101,17 +101,16 @@ class Solution:
         return self.climbStairs(n-1) + self.climbStairs(n-2)
 ```
 
-## WEEK 9:
+## WEEK 9:  Plus One
 ```
-class Solution:
-    def plusOne(self, digits: List[int]) -> List[int]:
-        for i in reversed(range(len(digits))):
-            if digits[i] == 9:
-                digits[i] = 0
-            else:
-                digits[i] += 1
-                return digits
-        return [1] + digits
+class Solution(object):
+    def plusOne(self, d):
+        for i in range(len(d)-1, -1, -1):
+            if d[i] < 9:
+                d[i] += 1; return d
+            d[i] = 0
+        return [1]+d
+
 ```
 
 ## WEEK 10:
