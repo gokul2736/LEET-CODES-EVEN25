@@ -154,4 +154,4 @@ class Solution(object):
 ```
 ```
 
-### Em undi le ika...ipoindi nee batuku ipoindi chekkestharu po
+### Ipoindi le ika lev
