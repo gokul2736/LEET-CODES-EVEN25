@@ -139,4 +139,9 @@ class Solution:
 
 ## WEEK 13:
 ```
+class Solution(object):
+    def hasMatch(self, s, p):
+        prefix, suffix = p.split('*')
+        start_idx = s.find(prefix)
+        return start_idx != -1 and s[start_idx + len(prefix):].endswith(suffix)
 ```
