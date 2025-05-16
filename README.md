@@ -145,3 +145,13 @@ class Solution(object):
         start_idx = s.find(prefix)
         return start_idx != -1 and s[start_idx + len(prefix):].endswith(suffix)
 ```
+
+## WEEK 14
+```
+```
+
+## WEEK 15
+```
+```
+
+### Em undi le ika...ipoindi nee batuku ipoindi chekkestharu po
